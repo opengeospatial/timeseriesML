@@ -27,7 +27,7 @@
                 }
             },
             "observingProcedure": {
-                "id": "http://vocab.nerc.ac.uk/???/sea_surface_temperature/",
+                "id": "http://vocab.nerc.ac.uk/.../Procedures/.../sea_surface_temperature/",
                 "label": {
                     "en": "Sea Surface Temperature Observing Procedure"
                 },
@@ -36,7 +36,7 @@
                 }
             }, 
             "observer": {
-                "id": "http://Sensor",
+                "id": "http://example.com/SeaSurfaceSensor",
                 "label": {
                     "en": "Sensor"
                 },
@@ -45,7 +45,7 @@
                 }
             },
             "host": {
-                "id": "http://bouy",
+                "id": "http://example.com/SeaSurfaceBouy",
                 "label": {
                     "en": "bouy"
                 },
