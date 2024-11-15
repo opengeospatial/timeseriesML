@@ -45,12 +45,12 @@
                 }
             },
             "host": {
-                "id": "http://example.com/SeaSurfaceBouy",
+                "id": "http://example.com/SeaSurfaceBuoy",
                 "label": {
-                    "en": "bouy"
+                    "en": "buoy"
                 },
                 "description": {
-                    "en": "bouyXXXX"
+                    "en": "buoyXXXX"
                 }
             },            
             "unit": {
