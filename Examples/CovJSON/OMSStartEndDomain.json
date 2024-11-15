@@ -26,6 +26,33 @@
                     "en": "The temperature of sea water near the surface (including the part under sea-ice, if any), and not the skin temperature."
                 }
             },
+            "observingProcedure": {
+                "id": "http://vocab.nerc.ac.uk/???/sea_surface_temperature/",
+                "label": {
+                    "en": "Sea Surface Temperature Observing Procedure"
+                },
+                "description": {
+                    "en": "Sea Surface Temperature Observing ProcedureXXXX"
+                }
+            }, 
+            "observer": {
+                "id": "http://Sensor",
+                "label": {
+                    "en": "Sensor"
+                },
+                "description": {
+                    "en": "SensorXXXX"
+                }
+            },
+            "host": {
+                "id": "http://bouy",
+                "label": {
+                    "en": "bouy"
+                },
+                "description": {
+                    "en": "bouyXXXX"
+                }
+            },            
             "unit": {
                 "label": {
                     "en": "Degree Celsius"
