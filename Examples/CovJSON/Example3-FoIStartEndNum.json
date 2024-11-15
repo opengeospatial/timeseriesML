@@ -5,10 +5,14 @@
         "domainType": "TimeSeries",
         "axes": {
             "x": {
-                "values": [-58.2]
+                "values": [
+                    -58.2
+                ]
             },
             "y": {
-                "values": [25]
+                "values": [
+                    25
+                ]
             },
             "t": {
                 "start": "2008-01-01T04:00:00Z",
@@ -17,6 +21,27 @@
             }
         }
     },
+    "referencing": [
+        {
+            "coordinates": [
+                "x",
+                "y"
+            ],
+            "system": {
+                "type": "GeographicCRS",
+                "id": "http://www.opengis.net/def/crs/EPSG/0/4979"
+            }
+        },
+        {
+            "coordinates": [
+                "t"
+            ],
+            "system": {
+                "type": "TemporalRS",
+                "calendar": "Gregorian"
+            }
+        }
+    ],
     "parameters": {
         "temperature": {
             "type": "Parameter",
