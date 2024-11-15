@@ -2,7 +2,7 @@
     "type": "Coverage",
     "domain": {
         "type": "Domain",
-        "domainType": "PointSeries",
+        "domainType": "TimeSeries",
         "COMMENT": "PointSeries requires geometry according to Table 1 — Domain Types table, MultiPoint and MultiPointSeries can be only time, but must be composite",
         "axes": {
             "t": {
