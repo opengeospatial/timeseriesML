@@ -13,6 +13,17 @@
             }
         }
     },
+    "referencing": [
+        {
+            "coordinates": [
+                "t"
+            ],
+            "system": {
+                "type": "TemporalRS",
+                "calendar": "Gregorian"
+            }
+        }
+    ],
     "parameters": {
         "temperature": {
             "type": "Parameter",
