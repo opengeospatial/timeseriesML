@@ -4,10 +4,16 @@
         "type": "Domain",
         "domainType": "TimeSeries",
         "axes": {
+            "x": {
+                "values": [-58.2]
+            },
+            "y": {
+                "values": [25]
+            },
             "t": {
-                  "start": "2008-01-01T04:00:00Z",
-                  "stop": "2008-01-01T05:00:00Z",
-                  "num": 2
+                "start": "2008-01-01T04:00:00Z",
+                "stop": "2008-01-01T05:00:00Z",
+                "num": 2
             }
         }
     },
@@ -32,7 +38,7 @@
                     "en": "Sea Surface Temperature Observing Procedure"
                 },
                 "description": {
-                    "en": "Sea Surface Temperature Observing ProcedureXXXX"
+                    "en": "Sea Surface Temperature Observing Procedure ..."
                 }
             }, 
             "observer": {
@@ -41,7 +47,7 @@
                     "en": "Sensor"
                 },
                 "description": {
-                    "en": "SensorXXXX"
+                    "en": "Sensor ..."
                 }
             },
             "host": {
@@ -50,9 +56,18 @@
                     "en": "buoy"
                 },
                 "description": {
-                    "en": "buoyXXXX"
+                    "en": "buoy ..."
                 }
-            },            
+            }, 
+            "featureOfInterest": {
+                "id": "http://example.com/TheoreticalInfoOnFoI",
+                "label": {
+                    "en": "Sea Surface Patch"
+                },
+                "description": {
+                    "en": "Sea Surface Patch ..."
+                }
+            }, 
             "unit": {
                 "label": {
                     "en": "Degree Celsius"
@@ -72,6 +87,8 @@
                 "t"
             ],
             "shape": [
+                1,
+                1,
                 2
             ],
             "values": [
