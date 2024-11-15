@@ -1,0 +1,57 @@
+{
+    "type": "Coverage",
+    "domain": {
+        "type": "Domain",
+        "domainType": "PointSeries",
+        "COMMENT": "PointSeries requires geometry according to Table 1 — Domain Types table, MultiPoint and MultiPointSeries can be only time, but must be composite",
+        "axes": {
+            "t": {
+                  "start": "2008-01-01T04:00:00Z",
+                  "stop": "2008-01-01T05:00:00Z",
+                  "num": 2
+            }
+        }
+    },
+    "parameters": {
+        "temperature": {
+            "type": "Parameter",
+            "description": {
+                "en": "The sea surface temperature in degrees Celsius."
+            },
+            "observedProperty": {
+                "id": "http://vocab.nerc.ac.uk/standard_name/sea_surface_temperature/",
+                "label": {
+                    "en": "Sea Surface Temperature"
+                },
+                "description": {
+                    "en": "The temperature of sea water near the surface (including the part under sea-ice, if any), and not the skin temperature."
+                }
+            },
+            "unit": {
+                "label": {
+                    "en": "Degree Celsius"
+                },
+                "symbol": {
+                    "value": "Cel",
+                    "type": "http://www.opengis.net/def/uom/UCUM/"
+                }
+            }
+        }
+    },
+    "ranges": {
+        "temperature": {
+            "type": "NdArray",
+            "dataType": "float",
+            "axisNames": [
+                "t"
+            ],
+            "shape": [
+                2
+            ],
+            "values": [
+                50,
+                60
+            ]
+        }
+    }
+}
