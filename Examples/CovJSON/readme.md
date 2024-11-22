@@ -15,5 +15,7 @@ Simple sea surface temperature example, `domain` uses `start`, `end` and `num` f
 The location of the featureOfInterest (from OMS) is included in the `composite` `domain`
 In addition, the `parameters` entry for temperature has been extended with concepts from OMS.
 
-
+##ToDo
+Multiple ObsProps
+Multiple FoIs
 
