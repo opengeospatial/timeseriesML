@@ -1,0 +1,130 @@
+{
+    "@iot.selfLink": "https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de/v1.1/Datastreams(1)",
+    "@iot.id": 1,
+    "name": "SPO.05.5032.1382.38.1",
+    "description": "NO as Tamsweg Untere Postgasse",
+    "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
+    "unitOfMeasurement": {
+        "name": "ug.m-3",
+        "symbol": "ug.m-3",
+        "definition": "http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3"
+    },
+    "observedArea": {
+        "type": "Point",
+        "coordinates": [
+            13.808333333,
+            47.125833333
+        ]
+    },
+    "phenomenonTime": "2017-12-31T23:00:00Z/2018-01-01T01:00:00Z",
+    "properties": {
+        "temporalExtent": "2017-12-31T23:00:00Z/2018-01-01T01:00:00Z",
+        "commenttemporalExtent": "Redundant due to phenomenonTime in DS",
+        "baseTime": "2017-12-31T23:00:00Z",
+        "spacing": "PT1H",
+        "status": "Some Code",
+        "sampledMedium": "http://inspire.ec.europa.eu/codelist/MediaValue/air",
+        "intendedObservationSpacing": "PT1H",
+        "numberTimeSteps": 2,
+        "parameter": [{
+                "name": "some name",
+                "value": "some value"
+            }],
+		"cumulative": "FALSE",
+		"accumulationIntervalLength": "PT1H",
+		"accumulationAnchorTime": "T00:00:00",
+		"startAnchorPoint": "T00:00:00",
+		"endAnchorPoint": "T00:00:00",
+		"maxGapPeriod": "PT8H"
+    },
+    "ObservedProperty": {
+        "@iot.selfLink": "https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de/v1.1/ObservedProperties(4)",
+        "@iot.id": 4,
+        "name": "NO",
+        "definition": "http://dd.eionet.europa.eu/vocabulary/aq/pollutant/38",
+        "description": "NO",
+        "properties": {}
+    },
+    "Sensor": {
+        "@iot.selfLink": "https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de/v1.1/Sensors(430)",
+        "@iot.id": 430,
+        "name": "API200EU",
+        "description": "http://dd.eionet.europa.eu/vocabulary/aq/measurementequipment/API200EU",
+        "encodingType": "application/pdf",
+        "metadata": "http://www.umweltbundesamt.at/fileadmin/site/umweltthemen/luft/PM_Aequivalenz_Dokumentation.pdf",
+        "properties": {}
+    },
+    "Observations": [{
+            "@iot.selfLink": "https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de/v1.1/Observations(1)",
+            "@iot.id": 1,
+            "phenomenonTime": "2017-12-31T23:00:00Z/2018-01-01T00:00:00Z",
+            "resultTime": null,
+            "result": 12.5962142944,
+            "FeatureOfInterest": {
+                "@iot.selfLink": "https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de/v1.1/FeaturesOfInterest(287)",
+                "@iot.id": 287,
+                "name": "SAM.05.5032.1382.38.1",
+                "description": "Air quality sample SAM.05.5032.1382.38.1",
+                "encodingType": "application/geo+json",
+                "feature": {
+                    "type": "Point",
+                    "coordinates": [
+                        13.808333333333334,
+                        47.12583333333333
+                    ]
+                },
+                "properties": {
+					"comment": "some comment",
+					"quality": "Good",
+					"nilReason": -9999,
+					"relatedObservation": "http://...",
+					"qualifier": "further data quality info",
+					"processing": "raw",
+					"source": "Info as MD_DataIdentification",
+					"censoredReason": "uncensored",
+					"uncertainty": "uncertainty information",
+					"interpolationType": "http://.../linear",
+					"aggregationDuration": "T00:00:00"
+				}
+            }
+        }, {
+            "@iot.selfLink": "https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de/v1.1/Observations(2)",
+            "@iot.id": 2,
+            "phenomenonTime": "2018-01-01T00:00:00Z/2018-01-01T01:00:00Z",
+            "resultTime": null,
+            "result": 7.7946872711,
+            "FeatureOfInterest": {
+                "@iot.selfLink": "https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de/v1.1/FeaturesOfInterest(287)",
+                "@iot.id": 287,
+                "name": "SAM.05.5032.1382.38.1",
+                "description": "Air quality sample SAM.05.5032.1382.38.1",
+                "encodingType": "application/geo+json",
+                "feature": {
+                    "type": "Point",
+                    "coordinates": [
+                        13.808333333333334,
+                        47.12583333333333
+                    ]
+                },
+                "properties": {
+					"comment": "some comment",
+					"quality": "Good",
+					"nilReason": -9999,
+					"relatedObservation": "http://...",
+					"qualifier": "further data quality info",
+					"processing": "raw",
+					"source": "Info as MD_DataIdentification",
+					"censoredReason": "uncensored",
+					"uncertainty": "uncertainty information",
+					"interpolationType": "http://.../linear",
+					"aggregationDuration": "T00:00:00"
+                }
+            }
+        }
+    ],
+    "Observations@iot.nextLink": "https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de/v1.1/Datastreams(1)/Observations?$skip=100&$expand=FeatureOfInterest&$orderby=phenomenonTime+asc,%40iot.id+asc&$skipFilter=%28phenomenonTime+gt+2018-01-05T02%3A00%3A00Z%2F2018-01-05T03%3A00%3A00Z%29",
+    "ObservedProperty@iot.navigationLink": "https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de/v1.1/Datastreams(1)/ObservedProperty",
+    "Sensor@iot.navigationLink": "https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de/v1.1/Datastreams(1)/Sensor",
+    "Thing@iot.navigationLink": "https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de/v1.1/Datastreams(1)/Thing",
+    "Observations@iot.navigationLink": "https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de/v1.1/Datastreams(1)/Observations"
+}
