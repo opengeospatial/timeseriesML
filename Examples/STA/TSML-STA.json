@@ -75,8 +75,8 @@
                 },
                 "properties": {
 					"comment": "some comment",
-					"quality": "Good",
-					"nilReason": -9999,
+					"quality": "Bad",
+					"nilReason": "Not measured",
 					"relatedObservation": "http://...",
 					"qualifier": "further data quality info",
 					"processing": "raw",
@@ -109,7 +109,7 @@
                 "properties": {
 					"comment": "some comment",
 					"quality": "Good",
-					"nilReason": -9999,
+					"nilReason": "NA",
 					"relatedObservation": "http://...",
 					"qualifier": "further data quality info",
 					"processing": "raw",
