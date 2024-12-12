@@ -2,7 +2,7 @@
     "type": "Coverage",
     "domain": {
         "type": "Domain",
-        "domainType": "TimeSeries",
+        "domainType": "PointSeries",
         "axes": {
             "x": {
                 "values": [-58.2]
