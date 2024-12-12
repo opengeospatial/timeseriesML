@@ -23,26 +23,29 @@
         "sampledMedium": "http://inspire.ec.europa.eu/codelist/MediaValue/air",
         "intendedObservationSpacing": "PT1H",
         "numberTimeSteps": 2,
-        "parameter": [{
+        "parameter": [
+            {
                 "name": "some name",
                 "value": "some value"
-            }],
-    		"cumulative": "FALSE",
-    		"accumulationIntervalLength": "PT1H",
-    		"accumulationAnchorTime": "T00:00:00",
-    		"startAnchorPoint": "T00:00:00",
-    		"endAnchorPoint": "T00:00:00",
-    		"maxGapPeriod": "PT8H"
+            }
+        ],
+        "cumulative": "FALSE",
+        "accumulationIntervalLength": "PT1H",
+        "accumulationAnchorTime": "T00:00:00",
+        "startAnchorPoint": "T00:00:00",
+        "endAnchorPoint": "T00:00:00",
+        "maxGapPeriod": "PT8H"
     },
     "ObservedProperty": {
         "name": "NO",
-        "definition": "http://dd.eionet.europa.eu/vocabulary/aq/pollutant/38",
+        "definition": "http://dd.eionet.europa.eu/vocabulary/aq/pollutant/38"
     },
     "Sensor": {
         "name": "API200EU",
-        "description": "http://dd.eionet.europa.eu/vocabulary/aq/measurementequipment/API200EU",
+        "description": "http://dd.eionet.europa.eu/vocabulary/aq/measurementequipment/API200EU"
     },
-    "Observations": [{
+    "Observations": [
+        {
             "phenomenonTime": "2017-12-31T23:00:00Z/2018-01-01T00:00:00Z",
             "result": 12.5962142944,
             "FeatureOfInterest": {
@@ -56,20 +59,21 @@
                     ]
                 },
                 "properties": {
-          					"comment": "some comment",
-          					"quality": "Bad",
-          					"nilReason": "Not measured",
-          					"relatedObservation": "http://...",
-          					"qualifier": "further data quality info",
-          					"processing": "raw",
-          					"source": "Info as MD_DataIdentification",
-          					"censoredReason": "uncensored",
-          					"uncertainty": "uncertainty information",
-          					"interpolationType": "http://.../linear",
-          					"aggregationDuration": "T00:00:00"
+                    "comment": "some comment",
+                    "quality": "Bad",
+                    "nilReason": "Not measured",
+                    "relatedObservation": "http://...",
+                    "qualifier": "further data quality info",
+                    "processing": "raw",
+                    "source": "Info as MD_DataIdentification",
+                    "censoredReason": "uncensored",
+                    "uncertainty": "uncertainty information",
+                    "interpolationType": "http://.../linear",
+                    "aggregationDuration": "T00:00:00"
                 }
             }
-        }, {
+        },
+        {
             "phenomenonTime": "2018-01-01T00:00:00Z/2018-01-01T01:00:00Z",
             "result": 7.7946872711,
             "FeatureOfInterest": {
@@ -83,17 +87,17 @@
                     ]
                 },
                 "properties": {
-            					"comment": "some comment",
-            					"quality": "Good",
-            					"nilReason": "NA",
-            					"relatedObservation": "http://...",
-            					"qualifier": "further data quality info",
-            					"processing": "raw",
-            					"source": "Info as MD_DataIdentification",
-            					"censoredReason": "uncensored",
-            					"uncertainty": "uncertainty information",
-            					"interpolationType": "http://.../linear",
-            					"aggregationDuration": "T00:00:00"
+                    "comment": "some comment",
+                    "quality": "Good",
+                    "nilReason": "NA",
+                    "relatedObservation": "http://...",
+                    "qualifier": "further data quality info",
+                    "processing": "raw",
+                    "source": "Info as MD_DataIdentification",
+                    "censoredReason": "uncensored",
+                    "uncertainty": "uncertainty information",
+                    "interpolationType": "http://.../linear",
+                    "aggregationDuration": "T00:00:00"
                 }
             }
         }
