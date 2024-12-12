@@ -15,9 +15,8 @@
                 "stop": "2008-01-01T05:00:00Z",
                 "num": 2
             }
-        }
-    },
-    "referencing": [
+        },
+		    "referencing": [
         {
             "coordinates": [
                 "x",
@@ -37,7 +36,8 @@
                 "calendar": "Gregorian"
             }
         }
-    ],    
+    ]
+    },
     "parameters": {
         "temperature": {
             "type": "Parameter",
