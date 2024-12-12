@@ -1,7 +1,7 @@
 # Examples of TSML CovJSON encoding
 
 ## [Example 1 - Enumerated Domain](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CovJSON/Example1-EnumeratedDomain.json)
-Simple sea surface temperature example, the "temporal" `domain` is enumerated under `values`, t axis contains individual timestamps. Note, there is no spatial aspect here yet. This is analogous to PointSeries just with no x,y,z designation. 
+Simple sea surface temperature example, the "temporal" `domain` is enumerated under `values`, t axis contains individual timestamps. Note, there is no spatial aspect here yet. This is analogous to PointSeries (see https://docs.ogc.org/cs/21-069r2/21-069r2.html#_8962dcde-77d5-426d-8eeb-ca2c168a0bee) just with no x,y,z designation. 
 
 ## [Example 2 - Start, End, Num](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CovJSON/Example2-StartEndNum.json)
 Simple sea surface temperature example, the "temporal" `domain` uses `start`, `end` and `num` for t axis. Note, there is no spatial aspect here yet. This is analogous to PointSeries just with no x,y,z designation.
