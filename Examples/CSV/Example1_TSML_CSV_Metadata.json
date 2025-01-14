@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.w3.org/ns/csvw",
+    "@context": "https://www.w3.org/ns/csvw.jsonld",
     "url": "https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CSV/CSV_Example1.csv",
     "tableSchema": {
         "columns": [
