@@ -4,5 +4,6 @@ Following the work of the [W3C CSV on the Web Working Group](https://www.w3.org/
 
 Same simple sea surface temperature example as used for the [CovJSON examples](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CovJSON/readme.md) as CSV file with accompanying JSON metadata.
 
-## [Example 1 CSV](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CSV/Example1_TSML_CSV.csv)
-## [Example 1 CSV Metadata](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CSV/Example1_TSML_CSV_Metadata.json)
+## Example 1
+[Example 1 CSV](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CSV/Example1_TSML_CSV.csv)
+[Example 1 CSV Metadata](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CSV/Example1_TSML_CSV_Metadata.json)
