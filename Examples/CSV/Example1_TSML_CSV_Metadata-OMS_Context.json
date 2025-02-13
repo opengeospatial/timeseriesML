@@ -1,0 +1,73 @@
+{
+    "@context": [
+	"http://www.w3.org/ns/csvw", 
+	{"oms": "https://service.datacove.eu/schemas/oms.jsonld"}
+	],
+    "url": "https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CSV/CSV_Example1.csv",
+    "tableSchema": {
+        "columns": [
+            {
+                "titles": "TIME",
+                "dc:description": "The phenomenon time of an observation."
+            },
+            {
+                "titles": "TEMP",
+                "dc:description": "The temperature of sea water near the surface (including the part under sea-ice, if any), and not the skin temperature.",
+                "oms:observedProperty": {
+                    "id": "http://vocab.nerc.ac.uk/standard_name/sea_surface_temperature/",
+                    "label": {
+                        "en": "Sea Surface Temperature"
+                    },
+                    "description": {
+                        "en": "The temperature of sea water near the surface (including the part under sea-ice, if any), and not the skin temperature."
+                    }
+                },
+                "oms:observingProcedure": {
+                    "id": "http://vocab.nerc.ac.uk/.../Procedures/.../sea_surface_temperature/",
+                    "label": {
+                        "en": "Sea Surface Temperature Observing Procedure"
+                    },
+                    "description": {
+                        "en": "Sea Surface Temperature Observing Procedure ..."
+                    }
+                },
+                "oms:observer": {
+                    "id": "http://example.com/SeaSurfaceSensor",
+                    "label": {
+                        "en": "Sensor"
+                    },
+                    "description": {
+                        "en": "Sensor ..."
+                    }
+                },
+                "oms:host": {
+                    "id": "http://example.com/SeaSurfaceBuoy",
+                    "label": {
+                        "en": "buoy"
+                    },
+                    "description": {
+                        "en": "buoy ..."
+                    }
+                },
+                "oms:featureOfInterest": {
+                    "id": "http://example.com/TheoreticalInfoOnFoI",
+                    "label": {
+                        "en": "Sea Surface Patch"
+                    },
+                    "description": {
+                        "en": "Sea Surface Patch ..."
+                    }
+                },
+                "unit": {
+                    "label": {
+                        "en": "Degree Celsius"
+                    },
+                    "symbol": {
+                        "value": "Cel",
+                        "type": "http://www.opengis.net/def/uom/UCUM/"
+                    }
+                }
+            }
+        ]
+    }
+}
