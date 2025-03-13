@@ -8,7 +8,7 @@
     "tableSchema": {
         "columns": [{
                 "name": "TIME",
-                "titles": "The phenomenon time of an observation.",
+                "dc:description": "The phenomenon time of an observation.",
                 "datatype": {
                     "base": "date",
                     "format": "YYYY-MM-DDTHH:MM:SS"
@@ -16,7 +16,7 @@
                 "propertyUrl": "http://www.w3.org/ns/sosa/phenomenonTime"
             }, {
                 "name": "TEMP",
-                "titles": "The temperature of sea water near the surface (including the part under sea-ice, if any), and not the skin temperature.",
+                "dc:description": "The temperature of sea water near the surface (including the part under sea-ice, if any), and not the skin temperature.",
 				"datatype":"double",
                 "propertyUrl": "http://vocab.nerc.ac.uk/standard_name/sea_surface_temperature/",
                 "oms:observingProcedure": {
