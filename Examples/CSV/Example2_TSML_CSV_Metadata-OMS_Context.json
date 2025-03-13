@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://www.w3.org/ns/csvw", {
-            "oms": "https://service.datacove.eu/schemas/oms.json"
+            "oms": "https://service.datacove.eu/schemas/oms.jsonld"
         }
     ],
     "url": "https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CSV/CSV_Example1.csv",
