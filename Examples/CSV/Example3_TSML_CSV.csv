@@ -1,0 +1,4 @@
+# Metadata: https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CSV/Example2_TSML_CSV_Metadata-OMS_Context.json
+"TIME", "TEMP"
+"2008-01-01T04:00:00Z", 50
+"2008-01-01T05:00:00Z", 60
