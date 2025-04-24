@@ -15,6 +15,9 @@ Simple sea surface temperature example, `domain` uses `start`, `end` and `num` f
 The location of the featureOfInterest (from OMS) is included in the `composite` `domain`
 In addition, the `parameters` entry for temperature has been extended with concepts from OMS. This is analogous to PointSeries with additional OMS semantic class extensions.
 
+## [Example 5 - OMS](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CovJSON/Example5-Metadata.json)
+Example 5 extended with both Point and TimeseriesMetadata. `comment-cov.json` is an Annotation Coverage to this Coverage
+
 ## ToDo
 
 Multiple ObsProps
