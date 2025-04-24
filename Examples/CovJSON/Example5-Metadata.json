@@ -98,7 +98,7 @@
                 }
             },
           "point_metadata": {
-            "comment": "http://www.data.org/Info/comment_cov.json",
+            "comment": "https://raw.githubusercontent.com/opengeospatial/timeseriesML/refs/heads/master/Examples/CovJSON/comment-cov.json",
             "nilreason": "http://www.data.org/Info/nilreason_cov.json",
             "processing": "http://www.data.org/Info/processing_cov.json",
           },
