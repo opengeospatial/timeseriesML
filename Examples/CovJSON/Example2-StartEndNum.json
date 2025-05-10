@@ -2,11 +2,21 @@
     "type": "Coverage",
     "domain": {
         "type": "Domain",
-        "domainType": "TimeSeries",
+        "domainType": "PointSeries",
         "axes": {
+            "x": {
+                "values": [
+                    -58.2
+                ]
+            },
+            "y": {
+                "values": [
+                    25
+                ]
+            },
             "t": {
-                  "start": "2008-01-01T04:00:00Z",
-                  "stop": "2008-01-01T05:00:00Z",
+                  "start": 1199160000,
+                  "stop": 1199163600,
                   "num": 2
             }
         }
