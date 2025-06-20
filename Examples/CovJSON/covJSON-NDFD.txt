@@ -9,8 +9,19 @@
       "y": { "values": [38.99, 39.70] }
     }   
    },
-   "parameters" : {
-    "maxt": {
+   "parameterGroup" : {
+     "windVelocity": {
+      "type": "ParameterGroup",
+      "observedProperty": {
+        "label": {
+          "en": "Wind velocity"
+       }
+      },
+      "members": ["wspd", "wdir", "wspd10th%"]
+     }
+    }, 
+    "parameters" : {
+     "maxt": {
       "type" : "Parameter",
       "description" : {
         "en": "The maximum Temperture over a 12 hour period, for 7 days"
@@ -24,16 +35,7 @@
           "en": "National Digital Forecast Database Daily Maximum Temperature"
         }
       }
-    },
-    "windVelocity": {
-      "type": "Parameter",
-      "observedProperty": {
-        "label": {
-          "en": "Wind velocity"
-       }
-      },
-      "members": ["wspd", "wdir", "wspd10th%"]
-    }, 
+     },
      "wspd": {
        "type": "Parameter",
         "description" : {
@@ -64,7 +66,7 @@
        }
      }
      },
-     "wspd10%": {
+     "wspd10th%": {
       "type": "Parameter",
           "description" : {
             "en": "The 10th percentile for wind speed at 2 meter height"
