@@ -1,7 +1,7 @@
 {
   "type": "CoverageCollection",
   "domainType": "PointSeries",
-  "parameters" : {
+  "parameters" : { 
     "maxt": {
       "type" : "Parameter",
       "description" : { "en": "The maximum Temperture over a 12 hour period, for 7 days" },
