@@ -23,18 +23,53 @@
     "parameters" : {
      "maxt": {
       "type" : "Parameter",
-      "description" : {
-        "en": "The maximum Temperture over a 12 hour period, for 7 days"
-      },
+      "description" : {"en": "The maximum Temperture over a 12 hour period, for 7 days"},
       "unit" : {
-        "symbol" : "F"
+        "symbol" : "F",
+        "label": { "en": "Degree Fahrenheit" }
       },
       "observedProperty" : {
         "id": "https://codes.wmo.int/grib2/codeflag/4.2/0-0-4",
         "label" : {
           "en": "National Digital Forecast Database Daily Maximum Temperature"
         }
-      }
+      },
+      "oms:observingProcedure": {
+          "id": "https://www.weather.gov/media/directives/010_pdfs/pd01002001curr.pdf",
+          "label": {
+              "en": "NDFD Procedural Directive"
+          },
+          "description": {
+              "en": "All NDFD Observing Procedures"
+          }
+      },
+      "oms:observer": {
+          "id": "http://example.com/SeaSurfaceSensor",
+          "label": {
+              "en": "Sensor"
+          },
+          "description": {
+              "en": "Sensor ..."
+          }
+      },
+      "oms:host": {
+          "id": "http://example.com/SeaSurfaceBuoy",
+          "label": {
+              "en": "buoy"
+          },
+          "description": {
+              "en": "buoy ..."
+          }
+      },
+      "oms:featureOfInterest": {
+          "id": "http://example.com/TheoreticalInfoOnFoI",
+          "label": {
+              "en": "Sea Surface Patch"
+          },
+          "description": {
+              "en": "Sea Surface Patch ..."
+          }
+      }        
      },
      "wspd": {
        "type": "Parameter",
