@@ -64,10 +64,10 @@
       "oms:featureOfInterest": {
           "id": "http://example.com/TheoreticalInfoOnFoI",
           "label": {
-              "en": "Sea Surface Patch"
+              "en": "(put lat/lon point here}"
           },
           "description": {
-              "en": "Sea Surface Patch ..."
+              "en": "A simulation of the state of the atmosphere at the specific Latitude/Longitude Point Location."
           }
       }        
      },
