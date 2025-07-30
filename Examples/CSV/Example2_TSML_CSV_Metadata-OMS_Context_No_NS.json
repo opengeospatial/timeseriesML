@@ -1,0 +1,63 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw", 
+        "https://service.datacove.eu/schemas/oms.jsonld"
+    ],
+    "url": "https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CSV/CSV_Example1.csv",
+    "tableSchema": {
+        "columns": [{
+                "name": "TIME",
+		"titles": "PhenomenonTime",
+                "dc:description": "The phenomenon time of an observation.",
+                "datatype": {
+                    "base": "date",
+                    "format": "YYYY-MM-DDTHH:MM:SS"
+                },
+                "propertyUrl": "http://www.w3.org/ns/sosa/phenomenonTime"
+            }, {
+                "name": "TEMP",
+		"titles": "Temperature",
+                "dc:description": "The temperature of sea water near the surface (including the part under sea-ice, if any), and not the skin temperature.",
+				"datatype":"double",
+                "propertyUrl": "http://vocab.nerc.ac.uk/standard_name/sea_surface_temperature/",
+                "observingProcedure": {
+                    "url": "http://vocab.nerc.ac.uk/.../Procedures/.../sea_surface_temperature/",
+                    "label": {
+                        "en": "Sea Surface Temperature Observing Procedure"
+                    },
+                    "description": {
+                        "en": "Sea Surface Temperature Observing Procedure ..."
+                    }
+                },
+                "observer": {
+                    "url": "http://example.com/SeaSurfaceSensor",
+                    "label": {
+                        "en": "Sensor"
+                    },
+                    "description": {
+                        "en": "Sensor ..."
+                    }
+                },
+                "host": {
+                    "url": "http://example.com/SeaSurfaceBuoy",
+                    "label": {
+                        "en": "buoy"
+                    },
+                    "description": {
+                        "en": "buoy ..."
+                    }
+                },
+                "featureOfInterest": {
+                    "url": "http://example.com/TheoreticalInfoOnFoI",
+                    "label": {
+                        "en": "Sea Surface Patch"
+                    },
+                    "description": {
+                        "en": "Sea Surface Patch ..."
+                    }
+                },
+                "schema:unitCode": "https://qudt.org/vocab/unit/DEG_C"
+            }
+        ]
+    }
+}
