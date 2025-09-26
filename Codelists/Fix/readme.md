@@ -8,4 +8,6 @@ Updates of the TSML Codelists
 - [ObservationType](https://github.com/opengeospatial/timeseriesML/blob/master/Codelists/Fix/ObservationTypeUpdate.ttl)
   - Changed URI base from http://www.opengis.net/def/observationType/timeseriesML/1.0/ to http://www.opengis.net/def/timeseries/ObservationType/
 - ProcessType
-- TimeseriesType
+- [TimeseriesType](https://github.com/opengeospatial/timeseriesML/blob/master/Codelists/Fix/TimeseriesTypeUpdate.ttl)
+  - Changed URI base from http://www.opengis.net/def/timeseriesType/timeseriesML/ and http://www.opengis.net/def/timeseriesType/timeseriesML/1.2/Time/ to http://www.opengis.net/def/timeseries/TimeseriesType/
+  - Added TVP (Domain/Range was duplicated) 
