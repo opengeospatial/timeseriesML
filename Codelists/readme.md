@@ -8,7 +8,7 @@ Within TSML, we have 5 codelists:
   - http://www.opengis.net/def/timeseries/ProcessTypeCode/Algorithm has the following narrower terms:
     - http://www.opengis.net/def/waterml/2.0/process-type/algorithm
     - http://www.opengis.net/def/waterml/2.0/processType/Algorithm
-- TimeseriesType: all sorts of issues. Entries for DomainRange are duplicated, while TVP is missing. Very strange URI patterns, e.g. http://www.opengis.net/def/timeseriesType/timeseriesML/1.2/Time/CategoricalTimeseriesDomainRange 
+- TimeseriesType: all sorts of issues. Entries for DomainRange are duplicated, while TVP is missing. Very strange URI patterns, e.g. [CategoricalTimeseriesDomainRange](http://www.opengis.net/def/timeseriesType/timeseriesML/1.2/Time/CategoricalTimeseriesDomainRange )  `http://www.opengis.net/def/timeseriesType/timeseriesML/1.2/Time/CategoricalTimeseriesDomainRange` 
 
 Unfortunately, there are issues in these lists, some codes are missing, others misspelled (e.g. TotalPrec was listed under PrecTotal). 
 Concepts are assigned to many wrong concepts schemes (example on [AvePrec](https://defs.opengis.net/prez/catalogs/ogc-cat:datamodels/col/datamodels:timeseriesml/it1/observationtype:timeseriesML/it2/interpolationcode:AveragePrec))
