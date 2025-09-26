@@ -1,0 +1,105 @@
+<http://www.opengis.net/def/timeseries/DataQualityCode/>
+      a       <http://www.w3.org/2004/02/skos/core#Collection> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Concepts in TimeSeriesML - DataQualityCode"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Terms in this codelist are used to indicate the quality of individual data points."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/DataQualityCode> ;
+      <http://www.w3.org/2004/02/skos/core#member>
+              <http://www.opengis.net/def/timeseries/DataQualityCode/Missing> , <http://www.opengis.net/def/timeseries/DataQualityCode/Poor> , <http://www.opengis.net/def/timeseries/DataQualityCode/Good> , <http://www.opengis.net/def/timeseries/DataQualityCode/Unchecked> , <http://www.opengis.net/def/timeseries/DataQualityCode/Suspect> , <http://www.opengis.net/def/timeseries/DataQualityCode/Estimate> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Concepts in TimeSeriesML - DataQualityCode"@en .
+
+<http://www.opengis.net/def/timeseries/DataQualityCode/Missing>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Missing"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "The data is missing."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/DataQualityCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Missing"@en .
+
+<http://www.opengis.net/def/timeseries/DataQualityCode/Unchecked>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Unchecked"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "The data has not been checked by any qualitative method."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/DataQualityCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Unchecked"@en .
+
+<http://www.opengis.net/def/timeseries/DataQualityCode/Estimate>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Estimate"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "The data is an estimate only, not a direct measurement."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/DataQualityCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Estimate"@en .
+
+<http://www.opengis.net/def/timeseries/DataQualityCode/Poor>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Poor"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "The data should be considered as low quality and may have been rejected."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/DataQualityCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Poor"@en .
+
+<http://www.opengis.net/def/timeseries/DataQualityCode/Good>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Good"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "The data has been examined and represents a reliable measurement."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/DataQualityCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Good"@en .
+
+<http://www.opengis.net/def/timeseries/DataQualityCode>
+      a       <http://www.opengis.net/def/metamodel/lid/lidset> , <http://rdfs.org/ns/void#Dataset> , <http://www.w3.org/2004/02/skos/core#ConceptScheme> , <http://www.opengis.net/def/metamodel/lid/ConceptScheme> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "TimeSeriesML - DataQualityCode"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.opengis.net/def/metamodel/ogc-na/collectionView>
+              <http://www.opengis.net/def/timeseries/DataQualityCode/> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Terms in this codelist are used to indicate the quality of individual data points."@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "TimeSeriesML - DataQualityCode"@en .
+
+<http://www.opengis.net/def/timeseries/DataQualityCode/Suspect>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Suspect"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "The data should be treated as suspect."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/DataQualityCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Suspect"@en .

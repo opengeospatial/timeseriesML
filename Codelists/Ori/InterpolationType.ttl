@@ -1,0 +1,208 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix qudt: <http://qudt.org/1.1/schema/qudt#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/timeseries/InterpolationCode/MaxPrec>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Maximum Preceding"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Value represents the maximum value that was measured during the preceding time interval."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/InterpolationCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Maximum Preceding"@en .
+
+
+<http://www.opengis.net/def/timeseries/InterpolationCode/InstantTotal>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Instant Total"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Value represents a total attributed to a specific time instant. This is normally generated from an event based measuring device. Example: An individual tip of a tipping bucket rain gauge."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/InterpolationCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Instant Total"@en .
+
+<http://www.opengis.net/def/timeseries/InterpolationCode/Discontinuous>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Discontinuous"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "The sampling of the property occurs such that it is not possible to regard the series as continuous. The time between samples is too large to classify the measurements as continuous. Example: An infrequent water sample measuring pH."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/InterpolationCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Discontinuous"@en .
+
+<http://www.opengis.net/def/timeseries/InterpolationCode>
+      a       <http://www.opengis.net/def/metamodel/lid/lidset> , <http://rdfs.org/ns/void#Dataset> , <http://www.w3.org/2004/02/skos/core#ConceptScheme> , <http://www.opengis.net/def/metamodel/lid/ConceptScheme> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "TimeSeriesML - InterpolationCode"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.opengis.net/def/metamodel/ogc-na/collectionView>
+              <http://www.opengis.net/def/timeseries/InterpolationCode/> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Terms in this codelist are used to indicate how data should be interpolated between neighboring points in a timeseries."@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "TimeSeriesML - InterpolationCode"@en .
+
+<http://www.opengis.net/def/timeseries/InterpolationCode/ConstPrec>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Constant Preceding"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Value is constant in the preceding interval."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/InterpolationCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Constant Preceding"@en .
+
+<http://www.opengis.net/def/timeseries/InterpolationCode/Continuous>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Continuous"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "A continuous timeseries indicates the observation result is the value of a property at the indicated instant in time. The points are essentially connected and interpolation may occur between points in order to estimate the value of the property between points. The appropriate time spacing between successive points to minimize interpolation errors is related to rate of change (with respect to time) of the property."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/InterpolationCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Continuous"@en .
+
+
+<http://www.opengis.net/def/timeseries/InterpolationCode/AverageSucc>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Average Succeeding"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Value represents the average value over the following interval.    "@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/InterpolationCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Average Succeeding"@en .
+
+
+<http://www.opengis.net/def/timeseries/InterpolationCode/MinPrec>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Minimum Preceding"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Value represents the minimum value that was measured during the preceding time interval."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/InterpolationCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Minimum Preceding"@en .
+
+
+<http://www.opengis.net/def/timeseries/InterpolationCode/AveragePrec>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Average Preceding"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Value represents the average value over the preceding interval.    "@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/InterpolationCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Average Preceding"@en .
+
+<http://www.opengis.net/def/timeseries/InterpolationCode/TotalSucc>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Total Succeeding"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Value represents the average value over the following interval."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/InterpolationCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Total Succeeding"@en .
+
+
+<http://www.opengis.net/def/timeseries/InterpolationCode/>
+      a       <http://www.w3.org/2004/02/skos/core#Collection> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Concepts in TimeSeriesML - InterpolationCode"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Terms in this codelist are used to indicate how data should be interpolated between neighboring points in a timeseries."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/InterpolationCode> ;
+      <http://www.w3.org/2004/02/skos/core#member>
+              <http://www.opengis.net/def/timeseries/InterpolationCode/AveragePrec> , <http://www.opengis.net/def/timeseries/InterpolationCode/MaxPrec> , <http://www.opengis.net/def/timeseries/InterpolationCode/TotalSucc> , <http://www.opengis.net/def/timeseries/InterpolationCode/InstantTotal> , <http://www.opengis.net/def/timeseries/InterpolationCode/Discontinuous> , <http://www.opengis.net/def/timeseries/InterpolationCode/MinSucc> , <http://www.opengis.net/def/timeseries/InterpolationCode/ConstPrec> , <http://www.opengis.net/def/timeseries/InterpolationCode/Continuous> , <http://www.opengis.net/def/timeseries/InterpolationCode/AverageSucc> , <http://www.opengis.net/def/timeseries/InterpolationCode/PrecTotal> , <http://www.opengis.net/def/timeseries/InterpolationCode/MaxSucc> , <http://www.opengis.net/def/timeseries/InterpolationCode/MinPrec> , <http://www.opengis.net/def/timeseries/InterpolationCode/ConstSucc> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Concepts in TimeSeriesML - InterpolationCode"@en .
+
+<http://www.opengis.net/def/timeseries/InterpolationCode/MinSucc>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Minimum Succeeding"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Value represents the minimum value for the following interval."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/InterpolationCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Minimum Succeeding"@en .
+
+<http://www.opengis.net/def/timeseries/InterpolationCode/MaxSucc>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Maximum Succeeding"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Value represents the maximum value for the following interval."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/InterpolationCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Maximum Succeeding"@en .
+
+<http://www.opengis.net/def/timeseries/InterpolationCode/PrecTotal>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Preceding Total"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Value represents the total of measurements taken within the previous time interval."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/InterpolationCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Preceding Total"@en .
+
+
+<http://www.opengis.net/def/timeseries/InterpolationCode/ConstSucc>
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Constant Succeeding"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+              <http://www.opengis.net/def/docs/15-042r5> ;
+      <http://www.w3.org/2004/02/skos/core#definition>
+              "Value is constant in the succeeding interval."@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              <http://www.opengis.net/def/timeseries/InterpolationCode> ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Constant Succeeding"@en .
+
