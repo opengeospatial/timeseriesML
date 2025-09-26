@@ -1,6 +1,6 @@
 Within TSML, we have 5 codelists:
 - InterpolationType, more details in the [wiki](https://github.com/opengeospatial/timeseriesML/wiki/Interpolation-Types)
-- DataQuality
+- DataQuality (OK, except for Concepts being in all Schemes)
 - ObservationType
 - ProcessType
 - TimeseriesType
