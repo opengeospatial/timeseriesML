@@ -1,3 +1,8 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix qudt: <http://qudt.org/1.1/schema/qudt#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
 <http://www.opengis.net/def/observationType/timeseriesML/1.0/MeasurementTimeseriesTVPObservation>
       a       <http://www.w3.org/2004/02/skos/core#Concept> ;
       <http://www.w3.org/2000/01/rdf-schema#label>
@@ -76,4 +81,5 @@
       <http://www.w3.org/2004/02/skos/core#definition>
               "In accordance with OMXML, the specialization of the OM_Observation result type is provided through schematron restriction. The om:type element may be used to specify the type of OM_Observation that is being encoded. This shall be done using the OGC Name URI for the corresponding type from this list."@en ;
       <http://www.w3.org/2004/02/skos/core#prefLabel>
+
               "TimeSeriesML - observationType"@en . 			  
