@@ -1,7 +1,7 @@
 Within TSML, we have 5 codelists:
 - InterpolationType, more details in the [wiki](https://github.com/opengeospatial/timeseriesML/wiki/Interpolation-Types)
 - DataQuality (OK, except for Concepts being in all Schemes)
-- ObservationType, use the wrong URI
+- ObservationType, use the wrong URI, not cleanly listed in old doc (just in table, no URI)
   - IS: http://www.opengis.net/def/observationType/timeseriesML/1.0/
   - Should be:  http://www.opengis.net/def/timeseries/ObservationType/
 - ProcessType
