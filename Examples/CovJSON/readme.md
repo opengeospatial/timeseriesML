@@ -19,8 +19,6 @@ Simple example from above extended with both Point and TimeseriesMetadata.
 For Point Metadata, the Annotation Coverage approach is utilized. The file [Example_Simple_Annotation.json](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CovJSON/Example_Simple_Annotation.json) is an Annotation Coverage to this Coverage providing a comment for each value.
 
 ### ToDo
-
-
-Multiple ObsProps
-Multiple FoIs
+- Multiple ObsProps
+- Multiple FoIs
 
