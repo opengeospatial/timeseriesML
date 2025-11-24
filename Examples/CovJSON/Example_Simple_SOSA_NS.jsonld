@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://covjson.org/context.jsonld", 
-        "https://service.datacove.eu/schemas/oms.jsonld"
+        {"sosa": "http://www.w3.org/ns/sosa#"}
     ],  
     "type": "Coverage",
     "domain": {
