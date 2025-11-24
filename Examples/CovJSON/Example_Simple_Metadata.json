@@ -1,4 +1,13 @@
 {
+    "@context": [
+        "https://covjson.org/context.jsonld", 
+        {"sosa": "http://www.w3.org/ns/sosa#",
+         "observedProperty": "sosa:observedProperty",
+         "usedProcedure": "sosa:usedProcedure",
+         "madeBySensor": "sosa:madeBySensor",
+         "hasFeatureOfInterest": "sosa:hasFeatureOfInterest"
+        }
+    ],  
     "type": "Coverage",
     "domain": {
         "type": "Domain",
@@ -52,7 +61,7 @@
                     "en": "The temperature of sea water near the surface (including the part under sea-ice, if any), and not the skin temperature."
                 }
             },
-            "oms:observingProcedure": {
+            "usedProcedure": {
                 "id": "http://vocab.nerc.ac.uk/.../Procedures/.../sea_surface_temperature/",
                 "label": {
                     "en": "Sea Surface Temperature Observing Procedure"
@@ -61,7 +70,7 @@
                     "en": "Sea Surface Temperature Observing Procedure ..."
                 }
             },
-            "oms:observer": {
+            "madeBySensor": {
                 "id": "http://example.com/SeaSurfaceSensor",
                 "label": {
                     "en": "Sensor"
@@ -70,16 +79,7 @@
                     "en": "Sensor ..."
                 }
             },
-            "oms:host": {
-                "id": "http://example.com/SeaSurfaceBuoy",
-                "label": {
-                    "en": "buoy"
-                },
-                "description": {
-                    "en": "buoy ..."
-                }
-            },
-            "oms:featureOfInterest": {
+            "hasFeatureOfInterest": {
                 "id": "http://example.com/TheoreticalInfoOnFoI",
                 "label": {
                     "en": "Sea Surface Patch"
@@ -100,12 +100,12 @@
           "point_metadata": {
             "comment": "https://raw.githubusercontent.com/opengeospatial/timeseriesML/refs/heads/master/Examples/CovJSON/comment-cov.json",
             "nilreason": "http://www.data.org/Info/nilreason_cov.json",
-            "processing": "http://www.data.org/Info/processing_cov.json",
+            "processing": "http://www.data.org/Info/processing_cov.json"
           },
           "timeseries_metadata": {
             "base_time": "2008-01-01T04:00:00Z",
             "status": "http://www.data.org/Info/bad",
-            "numberTimeSteps": 2,
+            "numberTimeSteps": 2
           }
         }
     },
