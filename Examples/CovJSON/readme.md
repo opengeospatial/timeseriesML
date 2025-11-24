@@ -13,10 +13,13 @@ Same example as above, but with SOSA concepts added to the context, thus removin
 The degree of integration with CovJSON is currently under discussion with the CovJSON community, see issues [Additional semantics from OMS](https://github.com/opengeospatial/CoverageJSON/issues/195) and [ssn:observedProperty in context.jsonld and further OMS/SOSA attributes](https://github.com/opengeospatial/CoverageJSON/issues/208)
 
 ### Adding Metadata
-#### [Example_Simple_Metadata.json](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CovJSON/Example_Simple_Metadata.jsonld)
-Simple example from above extended with both Point and TimeseriesMetadata. 
+#### Example with Metadata [Example_Simple_Metadata.json](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CovJSON/Example_Simple_Metadata.jsonld)
+Simple example from above extended with both Point- and TimeseriesMetadata. 
 
 For Point Metadata, the Annotation Coverage approach is utilized. The file [Example_Simple_Annotation.json](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CovJSON/Example_Simple_Annotation.json) is an Annotation Coverage to this Coverage providing a comment for each value.
+#### Discusion Point: Integration with CovJSON
+Not yet discussed how to integrate Point- and TimeseriesMetadata within CovJSON. As we're planning on putting Point- and TimeseriesMetadata to an extension of TSML, may make sense to create an independent context for this.
+
 
 ### ToDo
 - Multiple ObsProps
