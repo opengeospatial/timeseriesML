@@ -47,7 +47,7 @@
             "description": {
                 "en": "The sea surface temperature in degrees Celsius."
             },
-            "sosa:observedProperty": {
+            "observedProperty": {
                 "id": "http://vocab.nerc.ac.uk/standard_name/sea_surface_temperature/",
                 "label": {
                     "en": "Sea Surface Temperature"
