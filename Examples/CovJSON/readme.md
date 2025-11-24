@@ -9,11 +9,14 @@ In addition, the `parameters` entry for temperature has been extended with conce
 #### Example without SOSA Namespace: [Example_Simple_SOSA_No_NS.jsonld](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CovJSON/Example_Simple_SOSA_No_NS.jsonld)
 Same example as above, but with SOSA concepts added to the context, thus removing the `sosa` namespace inline
 
+#### Discusion Point: Namespace and Context
+The degree of integration with CovJSON is currently under discussion with the CovJSON community, see issues [Additional semantics from OMS](https://github.com/opengeospatial/CoverageJSON/issues/195) and [ssn:observedProperty in context.jsonld and further OMS/SOSA attributes](https://github.com/opengeospatial/CoverageJSON/issues/208)
 
+### Adding Metadata
+#### [Example_Simple_Metadata.json](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CovJSON/Example_Simple_Metadata.jsonld)
+Simple example from above extended with both Point and TimeseriesMetadata. 
 
-
-### [Example 5 - OMS](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CovJSON/OLD/Example5-Metadata.json)
-Example 5 extended with both Point and TimeseriesMetadata. `comment-cov.json` is an Annotation Coverage to this Coverage
+For Point Metadata, the Annotation Coverage approach is utilized. The file [Example_Simple_Annotation.json](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CovJSON/Example_Simple_Annotation.json) is an Annotation Coverage to this Coverage providing a comment for each value.
 
 ### ToDo
 
