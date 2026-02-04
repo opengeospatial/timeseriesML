@@ -1,5 +1,15 @@
 ## Examples of TSML CovJSON encoding for Domain-Range specialization
 
+### Required Extensions
+CovJSON uses the [observedProperty](https://www.w3.org/TR/vocab-ssn/#SOSAobservedProperty) concept from [SOSA/SSN](https://www.w3.org/TR/vocab-ssn/), but is missing additional information relevant to the observational data being described. Thus, we propose the addition of the following SOSA properties together with the observedProperty in the Parameters section of CovJSON:
+- [usedProcedure](https://www.w3.org/TR/vocab-ssn/#SOSAusedProcedure):  a re-usable Procedure used in making an Observation, typically through a Sensor.
+- [madeBySensor](https://www.w3.org/TR/vocab-ssn/#SOSAmadeBySensor): the Sensor which made the Observations
+- [hasFeatureOfInterest](https://www.w3.org/TR/vocab-ssn/#SOSAhasFeatureOfInterest): the entity whose property was observed
+
+These requirements are being covered in the following CovJSON Issues:
+- [Additional semantics from OMS](https://github.com/opengeospatial/CoverageJSON/issues/195)
+- [ssn:observedProperty in context.jsonld and further OMS/SOSA attributes](https://github.com/opengeospatial/CoverageJSON/issues/208)
+
 ### Simple Example (one Observed Property)
 #### Example with SOSA Namespace: [Example_Simple_SOSA_NS.jsonld](https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CovJSON/Example_Simple_SOSA_NS.jsonld)
 Simple sea surface temperature example, the "temporal" `domain` is enumerated under `values`, t axis contains individual timestamps. The location of the featureOfInterest is included in the `composite` `domain`, `domainType` is defined as PointSeries.
