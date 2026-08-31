@@ -608,7 +608,7 @@
           "observedProperty" : {
             "id": "https://codes.wmo.int/grib2/codeflag/4.2/0-0-4",
             "label" : {
-              "en": "NDFD Maximum Temperature"
+              "en": "NDFD Wind Speed"
             }
           }
         },
