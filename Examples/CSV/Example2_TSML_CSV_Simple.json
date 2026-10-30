@@ -1,0 +1,40 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        "https://service.datacove.eu/schemas/oms.jsonld"
+    ],
+    "url": "https://github.com/opengeospatial/timeseriesML/blob/master/Examples/CSV/CSV_Example1.csv",
+    "tableSchema": {
+        "columns": [{
+                "name": "TIME",
+                "titles": "PhenomenonTime",
+                "dc:description": "The phenomenon time of an observation.",
+                "datatype": {
+                    "base": "date",
+                    "format": "YYYY-MM-DDTHH:MM:SS"
+                },
+                "propertyUrl": "http://www.w3.org/ns/sosa/phenomenonTime"
+            }, {
+                "name": "TEMP",
+                "titles": "Temperature",
+                "dc:description": "The temperature of sea water near the surface (including the part under sea-ice, if any), and not the skin temperature.",
+                "datatype": "double",
+                "propertyUrl": "http://vocab.nerc.ac.uk/standard_name/sea_surface_temperature/",
+                "http://www.w3.org/ns/sosa/usedProcedure": "http://vocab.nerc.ac.uk/.../Procedures/.../sea_surface_temperature/",
+                "http://www.w3.org/ns/sosa/madeBySensor": "http://example.com/SeaSurfaceSensor",
+                "http://www.w3.org/ns/sosa/hasFeatureOfInterest": "http://example.com/TheoreticalInfoOnFoI",
+                "schema:unitCode": "https://qudt.org/vocab/unit/DEG_C"
+            }, {
+                "name": "HUMID",
+                "titles": "Humidity",
+                "dc:description": "The Humidity of sea water near the surface (including the part under sea-ice, if any), and not the skin temperature.",
+                "datatype": "double",
+                "propertyUrl": "http://vocab.nerc.ac.uk/standard_name/sea_surface_temperature/",
+                "http://www.w3.org/ns/sosa/usedProcedure": "http://vocab.nerc.ac.uk/.../Procedures/.../sea_surface_temperature/",
+                "http://www.w3.org/ns/sosa/madeBySensor": "http://example.com/SeaSurfaceSensor",
+                "http://www.w3.org/ns/sosa/hasFeatureOfInterest": "http://example.com/TheoreticalInfoOnFoI",
+                "schema:unitCode": "https://qudt.org/vocab/unit/DEG_C"
+            }
+        ]
+    }
+}
