@@ -1,12 +1,6 @@
 {
     "@context": [
-        "https://covjson.org/context.jsonld", 
-        {"sosa": "http://www.w3.org/ns/sosa#",
-         "observedProperty": "sosa:observedProperty",
-         "usedProcedure": "sosa:usedProcedure",
-         "madeBySensor": "sosa:madeBySensor",
-         "hasFeatureOfInterest": "sosa:hasFeatureOfInterest"
-        }
+        "https://covjson.org/context.jsonld"
     ],  
     "type": "Coverage",
     "domain": {
@@ -20,10 +14,9 @@
                 "values": [25]
             },
             "t": {
-                "values": [
-                    "2008-01-01T04:00:00Z",
-                    "2008-01-01T05:00:00Z"
-                ]
+                "start": "2008-01-01T04:00:00Z",
+                "stop": "2008-01-02T03:00:00Z",
+                "num": 24
             }
         },
         "referencing": [{
@@ -107,11 +100,33 @@
                 "t"
             ],
             "shape": [
-                2
+                24
             ],
             "values": [
-                50,
-                60
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
             ]
         }
     }
