@@ -16,7 +16,8 @@
             "t": {
                 "start": 0,
                 "stop": 23,
-                "num": 24
+                "num": 24,
+                "unit": "hourly"
             }
         },
         "referencing": [{
