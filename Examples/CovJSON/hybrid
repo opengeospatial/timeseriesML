@@ -1,0 +1,135 @@
+{
+    "@context": [
+        "https://covjson.org/context.jsonld"
+    ],  
+    "type": "Coverage",
+    "domain": {
+        "type": "Domain",
+        "domainType": "PointSeries",
+        "axes": {
+            "x": {
+                "values": [-58.2]
+            },
+            "y": {
+                "values": [25]
+            },
+            "t": {
+                "start": 0,
+                "stop": 23,
+                "num": 24,
+                "unit": "hourly"
+            }
+        },
+        "referencing": [{
+                "coordinates": [
+                    "x",
+                    "y"
+                ],
+                "system": {
+                    "type": "GeographicCRS",
+                    "id": "http://www.opengis.net/def/crs/EPSG/0/4979"
+                }
+            }, {
+                "coordinates": [
+                    "t"
+                ],
+                "system": {
+                    "type": "TemporalRS",
+                    "datum": "2008-01-01T04:00:00Z",
+                    "calendar": "Gregorian"
+                }
+            }
+        ]
+    },
+    "parameters": {
+        "temperature": {
+            "type": "Parameter",
+            "description": {
+                "en": "The sea surface temperature in degrees Celsius."
+            },
+            "observedProperty": {
+                "id": "http://vocab.nerc.ac.uk/standard_name/sea_surface_temperature/",
+                "label": {
+                    "en": "Sea Surface Temperature"
+                },
+                "description": {
+                    "en": "The temperature of sea water near the surface (including the part under sea-ice, if any), and not the skin temperature."
+                }
+            },
+            "usedProcedure": {
+                "id": "http://vocab.nerc.ac.uk/.../Procedures/.../sea_surface_temperature/",
+                "label": {
+                    "en": "Sea Surface Temperature Observing Procedure"
+                },
+                "description": {
+                    "en": "Sea Surface Temperature Observing Procedure ..."
+                }
+            },
+            "madeBySensor": {
+                "id": "http://example.com/SeaSurfaceSensor",
+                "label": {
+                    "en": "Sensor"
+                },
+                "description": {
+                    "en": "Sensor ..."
+                }
+            },
+            "hasFeatureOfInterest": {
+                "id": "http://example.com/TheoreticalInfoOnFoI",
+                "label": {
+                    "en": "Sea Surface Patch"
+                },
+                "description": {
+                    "en": "Sea Surface Patch ..."
+                }
+            },
+            "unit": {
+                "label": {
+                    "en": "Degree Celsius"
+                },
+                "symbol": {
+                    "value": "Cel",
+                    "type": "http://www.opengis.net/def/uom/UCUM/"
+                }
+            }
+        }
+    },
+    "ranges": {
+        "temperature": {
+            "type": "NdArray",
+            "dataType": "float",
+            "axisNames": [
+                "t"
+            ],
+            "shape": [
+                24
+            ],
+            "values": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+            ]
+        }
+    }
+}
